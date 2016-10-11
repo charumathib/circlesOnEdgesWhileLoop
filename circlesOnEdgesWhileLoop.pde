@@ -1,5 +1,5 @@
 int diameter ; 
-int CORNER_COLOR = #FAFBFC;
+
 public void setup() {
   size(480, 120);
   background(0);
@@ -16,11 +16,11 @@ public void draw() {
 
 void fillAndDrawCircle(int x, int y) { 
   fill(100, 100);
-  // When it is the corner, make it white
+
   if ( (x == 0 || x == width) && (y == 0 || y == height)) { 
-    fill(CORNER_COLOR);
+    fill(#FAFBFC);
   }
-  // Draw only on the edges
+
   if ( y == 0 || x == 0 || x == width || y == height) { 
     ellipse(x, y, diameter, diameter);
   }
